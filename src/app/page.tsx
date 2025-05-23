@@ -14,16 +14,14 @@ export default function Home() {
             <p>25/05</p>
           </div>
           {
-            // Date.now() < new Date("2025-05-25T00:00:00").getTime() 
-            false ?
+            Date.now() < new Date("2025-05-25T00:00:00").getTime() ?
               <Timer />
               :
               ''
           }
         </div>
         {
-          // Date.now() < new Date("2025-05-25T00:00:00").getTime() 
-          false ?
+          Date.now() < new Date("2025-05-25T00:00:00").getTime() ?
             ''
             :
             <>
@@ -70,7 +68,7 @@ export default function Home() {
               <Card>
                 <p className="md:text-2xl">
                   Que venham muitos outros anos, recheados de novas memórias, aventuras e, acima de tudo, amor.
-                  <br />
+                  <br/>
                   <strong>
                     Feliz 1 ano pra nós! ❤️
                   </strong>
