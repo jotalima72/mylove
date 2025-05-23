@@ -23,25 +23,25 @@ export default function Timer() {
     <div className="flex flex-col gap-2 font-mono text-green-400 w-fit">
       <div className="flex gap-4 justify-around">
         <div>
-          <Card>{getDate.getMonth() > 10 ? getDate.getMonth() : "0" + getDate.getMonth()}</Card>
+          <Card>{getDate.getMonth() >= 10 ? getDate.getMonth() : "0" + getDate.getMonth()}</Card>
           <span>months</span>
         </div>
         <div>
-          <Card>{(getDate.getDate() - 1) > 10 ? (getDate.getDate() - 1) : "0" + (getDate.getDate() - 1)}</Card>
+          <Card>{(getDate.getDate() - 1) >= 10 ? (getDate.getDate() - 1) : "0" + (getDate.getDate() - 1)}</Card>
           <span>days</span>
         </div>
       </div>
       <div className="flex gap-4 justify-between">
         <div>
-          <Card>{getDate.getUTCHours() > 10 ? getDate.getUTCHours() : "0" + getDate.getUTCHours()}</Card>
+          <Card>{getDate.getUTCHours() >= 10 ? getDate.getUTCHours() : "0" + getDate.getUTCHours()}</Card>
           <span>hours</span>
         </div>
         <div>
-          <Card>{getDate.getUTCMinutes() > 10 ? getDate.getUTCMinutes() : "0" + getDate.getUTCMinutes()}</Card>
+          <Card>{getDate.getUTCMinutes() >= 10 ? getDate.getUTCMinutes() : "0" + getDate.getUTCMinutes()}</Card>
           <span>minutes</span>
         </div>
         <div>
-          <Card>{getDate.getUTCSeconds() > 10 ? getDate.getUTCSeconds() : "0" + getDate.getUTCSeconds()}
+          <Card>{getDate.getUTCSeconds() >= 10 ? getDate.getUTCSeconds() : "0" + getDate.getUTCSeconds()}
           </Card>
           <span>seconds</span>
         </div>
