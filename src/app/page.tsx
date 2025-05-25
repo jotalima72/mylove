@@ -14,14 +14,14 @@ export default function Home() {
             <p>25/05</p>
           </div>
           {
-            Date.now() < new Date("2025-05-25T00:00:00").getTime() ?
+            Date.now() < new Date("2025-05-24T21:00:00").getTime() ?
               <Timer />
               :
               ''
           }
         </div>
         {
-          Date.now() < new Date("2025-05-25T00:00:00").getTime() ?
+          Date.now() < new Date("2025-05-24T21:00:00").getTime() ?
             ''
             :
             <>
